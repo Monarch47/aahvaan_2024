@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import SportsCarousel from "./components/SportsCarousel";
@@ -6,10 +6,12 @@ import TeamGrid from "./components/TeamGrid";
 import ContactBox from "./components/ContactBox";
 import Footer from "./components/Footer";
 import SportsIconsBox from "./components/SportsIconsBox";
-import router from "next/navigation";
+import { useRouter } from "next/navigation";
 import SportsMarquee from "./components/SportsMarquee";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between text-black">
       <Navbar />
@@ -35,9 +37,9 @@ export default function Home() {
                 fuga? Eius commodi rem sunt ad, modi a?
               </h3>
               <button
-                // onClick={() => {
-                //   router.push("auth/signin");
-                // }}
+                onClick={() => {
+                  router.push("auth/");
+                }}
                 className="bg-[#160C28] border-2 border-[#ffffff] md:mt-[23px] hover:text-[#ffffff] hover:bg-black text-white px-6 py-3 text-xl font-medium rounded-lg z-[1]"
               >
                 Register

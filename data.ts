@@ -123,7 +123,7 @@ export const SportsIconsData = [
         iconPath: "/assets/images/sport_icon_4.svg",
         brushStrokePath: "/assets/images/brush_stroke_blue.svg",
         styles: {
-            top: "20",
+            top: "24",
             bottom: "64"
         }
     },

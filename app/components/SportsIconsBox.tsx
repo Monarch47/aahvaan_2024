@@ -10,7 +10,7 @@ const renderSportIcons = SportsIconsData.map((sportIcon, index) => {
     >
       <img
         src={sportIcon.iconPath}
-        className={`w-64 aspect-auto rounded-lg flex flex-col justify-center items-center relative z-[1] top-${sportIcon.styles.top} scale-125 -bottom-64`}
+        className={`w-64 aspect-auto rounded-lg flex flex-col justify-center items-center relative z-[1] top-${sportIcon.styles.top} scale-125 -bottom-16`}
       />
       <img
         src={sportIcon.brushStrokePath}
