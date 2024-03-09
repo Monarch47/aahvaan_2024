@@ -4,7 +4,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <div className="flex lg:w-1/2 rounded-lg bg-gray-500 items-center justify-evenly py-1 fixed z-10">
+    <div className="flex lg:w-1/2 rounded-lg bg-white items-center justify-evenly py-1 fixed z-10 text-black">
       <img
         src="/assets/logos/aahvaan.svg"
         alt="aahvaan logo"
