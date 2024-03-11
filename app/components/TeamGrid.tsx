@@ -3,7 +3,7 @@ import { TeamGridData } from "@/data";
 
 const renderTeamGridData = TeamGridData.map((teamMember, index) => {
   return (
-    <React.Fragment key={index}>
+    <React.Fragment key={Math.random() * index}>
       <div className="flex flex-col items-center justify-center gap-4">
         <img src={teamMember.path} className="w-40 aspect-auto rounded-full" />
         <div className="flex flex-col gap-2">
