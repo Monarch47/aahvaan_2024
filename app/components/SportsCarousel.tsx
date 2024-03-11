@@ -1,6 +1,5 @@
 "use client";
 // components/SwiperCarousel.tsx
-import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SportsCarouselImages } from "../../data";
 

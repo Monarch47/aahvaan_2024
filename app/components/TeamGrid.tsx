@@ -4,7 +4,10 @@ type Props = {};
 
 const renderTeamGridData = TeamGridData.map((teamMember, index) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-4">
+    <div
+      className="flex flex-col items-center justify-center gap-4"
+      key={index}
+    >
       <img src={teamMember.path} className="w-40 aspect-auto rounded-full" />
       <div className="flex flex-col gap-2">
         <h2>{teamMember.name}</h2>
