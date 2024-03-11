@@ -1,6 +1,5 @@
 import React from "react";
 import { TeamGridData } from "@/data";
-type Props = {};
 
 const renderTeamGridData = TeamGridData.map((teamMember, index) => {
   return (
@@ -17,7 +16,7 @@ const renderTeamGridData = TeamGridData.map((teamMember, index) => {
   );
 });
 
-const TeamGrid = (props: Props) => {
+const TeamGrid = () => {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 w-4/5 gap-y-10 gap-x-10">
       {renderTeamGridData}
