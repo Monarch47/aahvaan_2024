@@ -6,19 +6,21 @@ import { SportsCarouselImages } from "../../data";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import { Navigation } from "swiper/modules";
+import SwiperPrevButton from "./SwiperPrevButton";
+import SwiperNextButton from "./SwiperNextButton";
 
 const SportsCarousel = () => {
   return (
     <Swiper
       slidesPerView={4}
-      navigation
-      pagination
       spaceBetween={10}
       modules={[Navigation]}
-      className="w-full relative"
+      className="w-full relative flex"
     >
+      <SwiperPrevButton />
       {SportsCarouselImages.map((sportImage, index) => (
         <SwiperSlide key={index}>
           <div className="flex flex-col justify-center items-center gap-4 text-black">
@@ -31,6 +33,7 @@ const SportsCarousel = () => {
           </div>
         </SwiperSlide>
       ))}
+      <SwiperNextButton />
     </Swiper>
   );
 };

@@ -101,7 +101,6 @@ export const SportsIconsData = [
         iconPath: "/assets/images/sport_icon_1.svg",
         brushStrokePath: "/assets/images/brush_stroke_red.svg",
         styles: {
-            top: "10",
 
         }
     },
@@ -109,43 +108,41 @@ export const SportsIconsData = [
         iconPath: "/assets/images/sport_icon_2.svg",
         brushStrokePath: "/assets/images/brush_stroke_green.svg",
         styles: {
-            top: "20",      
+            top: "10",
         }
     },
     {
         iconPath: "/assets/images/sport_icon_3.svg",
         brushStrokePath: "/assets/images/brush_stroke_yellow.svg",
         styles: {
-            top: "20",        
+            top: "6",
         }
     },
     {
         iconPath: "/assets/images/sport_icon_4.svg",
         brushStrokePath: "/assets/images/brush_stroke_blue.svg",
         styles: {
-            top: "24",
-            bottom: "64"
+            top: "10",
+
         }
     },
     {
         iconPath: "/assets/images/sport_icon_5.svg",
         brushStrokePath: "/assets/images/brush_stroke_yellow.svg",
         styles: {
-            top: "20",
+            top: "10",
         }
     },
     {
         iconPath: "/assets/images/sport_icon_6.svg",
         brushStrokePath: "/assets/images/brush_stroke_green.svg",
         styles: {
-            top: "10",
         }
     },
     {
         iconPath: "/assets/images/sport_icon_7.svg",
         brushStrokePath: "/assets/images/brush_stroke_red.svg",
         styles: {
-            top: "10",
             
         }
     },
