@@ -8,9 +8,11 @@ const renderContactData = ContactUsData.map((contact, index) => {
       className="flex flex-col items-center justify-center gap-2"
       key={index}
     >
-      <h3 className="underline font-medium text-xl">{contact.number}</h3>
-      <h2 className="font-bold text-2xl">{contact.name}</h2>
-      <h3 className="text-xl">{contact.role}</h3>
+      <h3 className="underline font-medium text-md lg:text-xl">
+        {contact.number}
+      </h3>
+      <h2 className="font-bold text-lg lg:text-2xl">{contact.name}</h2>
+      <h3 className="text-md lg:text-xl">{contact.role}</h3>
     </div>
   );
 });

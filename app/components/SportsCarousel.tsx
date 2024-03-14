@@ -30,7 +30,7 @@ const SportsCarousel = () => {
               style={{ backgroundColor: sportImage.bgcolor }}
               alt={sportImage.text}
             />
-            <h2 className="text-md lg:text-xl font-semibold">
+            <h2 className="text-md lg:text-xl font-semibold text-center">
               {sportImage.text}
             </h2>
           </div>

@@ -56,20 +56,22 @@ const Navbar = () => {
             : "flex justify-center items-center gap-8"
         }`}
       >
-        <img
-          src="/assets/logos/aahvaan.svg"
-          alt="aahvaan logo"
-          className={`w-16 lg:w-20 aspect-square ${
-            isScrolled && !isCirclePosition ? "hidden" : "block"
-          }`}
-        />
-        <a href="#events" className="lg:text-xl">
+        <a href="#">
+          <img
+            src="/assets/logos/aahvaan.svg"
+            alt="aahvaan logo"
+            className={`w-16 lg:w-20 aspect-square ${
+              isScrolled && !isCirclePosition ? "hidden" : "block"
+            }`}
+          />
+        </a>
+        <a href="#events" className="text-md lg:text-xl font-semibold">
           Events
         </a>
-        <a href="#team" className="lg:text-xl">
+        <a href="#team" className="text-md lg:text-xl font-semibold">
           The Team
         </a>
-        <a href="#contact" className="lg:text-xl">
+        <a href="#contact" className="text-md lg:text-xl font-semibold">
           Contact Us
         </a>
         <img
