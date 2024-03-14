@@ -1,5 +1,6 @@
 import React from "react";
 import { SportsMarqueeData } from "@/data";
+import Marquee from "react-fast-marquee";
 
 const renderSportsMarqueeData = SportsMarqueeData.map((sportMarquee, index) => {
   return (
@@ -17,15 +18,33 @@ const renderSportsMarqueeData = SportsMarqueeData.map((sportMarquee, index) => {
 
 type Props = {
   className: string;
+  marqueeProps: {
+    gradient: boolean;
+    gradientColor: string;
+    gradientWidth: number;
+    autoFill: boolean;
+    direction: "left" | "right" | "up" | "down";
+  };
 };
 
 const SportsMarquee = (props: Props) => {
   return (
-    <div
-      className={`${props.className} flex justify-evenly items-center py-0 md:py-2 text-md md:text-xl w-full z-[1] overflow-x-hidden gap-10 md:gap-2`}
+    <Marquee
+      gradient={props.marqueeProps.gradient}
+      gradientColor={props.marqueeProps.gradientColor}
+      gradientWidth={props.marqueeProps.gradientWidth}
+      autoFill={props.marqueeProps.autoFill}
+      direction={props.marqueeProps.direction}
+      speed={20}
+      pauseOnClick={true}
+      pauseOnHover={true}
     >
-      {renderSportsMarqueeData}
-    </div>
+      <div
+        className={`${props.className} flex justify-evenly items-center py-0 md:py-2 text-md md:text-xl w-full z-[1] overflow-x-hidden gap-10 md:gap-10`}
+      >
+        {renderSportsMarqueeData}
+      </div>
+    </Marquee>
   );
 };
 

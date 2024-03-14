@@ -9,13 +9,17 @@ import { useRouter } from "next/navigation";
 import SportsMarquee from "./components/SportsMarquee";
 import SwiperPrevButton from "./components/SwiperPrevButton";
 import SwiperNextButton from "./components/SwiperNextButton";
+import FootballNav from "./components/FootballNav";
+import NavbarFinal from "./components/NavbarFinal";
 
 export default function Home() {
   const router = useRouter();
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between text-black">
-      <Navbar />
+      {/* <Navbar /> */}
+      <FootballNav />
+      {/* <NavbarFinal /> */}
       <div className="w-full flex flex-col relative">
         <div className="overflow-hidden min-h-screen bg-gradient-radial from bg-white to-transparent flex justify-center items-center relative">
           <div className="w-full flex flex-col justify-end min-h-screen">
@@ -37,12 +41,12 @@ export default function Home() {
                 nights Aahvaan has it all.
               </h3>
               <button
-                onClick={() => {
-                  router.push("auth/");
-                }}
-                className="bg-[#160C28] border-2 border-[#ffffff] md:mt-[23px] hover:text-[#ffffff] hover:bg-black text-white px-6 py-3 text-xl font-medium rounded-lg z-[1]"
+                // onClick={() => {
+                //   router.push("auth/");
+                // }}
+                className="bg-[#160C28] border-2 border-[#ffffff] md:mt-[23px] hover:text-[#160C28] hover:bg-white hover:border-[#160C28] transition-all text-white px-6 py-3 text-xl font-medium rounded-lg z-[1]"
               >
-                Register
+                <a href="https://dtu.ac.in">Register</a>
               </button>
             </div>
             <div className="relative top-3/4 hidden lg:block">
@@ -55,10 +59,24 @@ export default function Home() {
             />
             <div className="relative z-[1]">
               <SportsMarquee
-                className={`bg-[#160C28] text-white border-2 border-white top-[84%] md:top-[90%]`}
+                className={`bg-[#160C28] text-white border-y-2 border-white top-[84%] md:top-[90%]`}
+                marqueeProps={{
+                  gradient: true,
+                  gradientColor: "rgba(0, 0, 0, 0.5)",
+                  gradientWidth: 50,
+                  autoFill: true,
+                  direction: "right",
+                }}
               />
               <SportsMarquee
-                className={`bg-white text-[#160C28] border-2 border-[#160C28] top-[92%] md:top-[95%]`}
+                className={`bg-white text-[#160C28] border-y-2 border-[#160C28] top-[92%] md:top-[95%]`}
+                marqueeProps={{
+                  gradient: true,
+                  gradientColor: "rgba(203, 203, 203, 0.5)",
+                  gradientWidth: 50,
+                  autoFill: true,
+                  direction: "left",
+                }}
               />
             </div>
           </div>
@@ -70,10 +88,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full relative bg-gradient-radial from bg-[#F7FFFA] to-transparent">
+      <div
+        className="w-full relative bg-gradient-radial from bg-[#F7FFFA] to-transparent"
+        id="events"
+      >
         <div className="w-full flex flex-col items-center justify-center py-16 gap-8">
           <div className="w-4/5 text-center flex flex-col justify-center items-center gap-10">
-            <div className="flex flex-col gap-8 pb-6 lg:pb-10 justify-center items-center">
+            <div className="flex flex-col gap-8 lg:gap-10 pb-6 lg:pb-16 justify-center items-center">
               <h1 className="text-xl lg:text-5xl font-semibold">Events</h1>
               <p className="lg:text-xl w-3/4 lg:w-1/2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
@@ -89,11 +110,14 @@ export default function Home() {
             className="w-screen h-[45%] object-cover absolute top-0 left-0 z-0"
           />
         </div>
-        <div className="w-full flex flex-col items-center justify-center py-16 lg:py-24 gap-8">
+        <div
+          className="w-full flex flex-col items-center justify-center py-16 lg:py-24 gap-8"
+          id="team"
+        >
           <div className="w-4/5 text-center flex flex-col justify-center items-center gap-10">
-            <div className="flex flex-col gap-8 pb-10 justify-center items-center">
+            <div className="flex flex-col gap-8 lg:gap-10 pb-6 lg:pb-16 justify-center items-center">
               <h1 className="text-xl lg:text-5xl font-semibold">Our Team</h1>
-              <p className="lg:text-xl w-3/4 lg::w-1/2">
+              <p className="lg:text-xl w-3/4 lg:w-1/2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
                 sequi perspiciatis odio eveniet, minus illum eligendi hic
                 exercitatione magni nemo minima officia. Totam, commodi?
@@ -103,7 +127,10 @@ export default function Home() {
           <TeamGrid />
         </div>
 
-        <div className="w-full flex flex-col items-center justify-center py-16 lg:py-24 gap-10">
+        <div
+          className="w-full flex flex-col items-center justify-center py-16 lg:py-24 gap-10"
+          id="contact"
+        >
           <div className="w-4/5 text-center flex flex-col justify-center items-center gap-12">
             <h1 className="text-xl lg:text-5xl font-semibold">Contact Us</h1>
             <ContactBox />

@@ -5,12 +5,12 @@ type Props = {};
 const renderContactData = ContactUsData.map((contact, index) => {
   return (
     <div
-      className="flex flex-col items-center justify-center gap-1"
+      className="flex flex-col items-center justify-center gap-2"
       key={index}
     >
-      <h3>{contact.number}</h3>
-      <h2>{contact.name}</h2>
-      <h3>{contact.role}</h3>
+      <h3 className="underline font-medium text-xl">{contact.number}</h3>
+      <h2 className="font-bold text-2xl">{contact.name}</h2>
+      <h3 className="text-xl">{contact.role}</h3>
     </div>
   );
 });

@@ -16,6 +16,7 @@ const SportsCarousel = () => {
     <Swiper
       slidesPerView={4}
       spaceBetween={10}
+      loop={true}
       modules={[Navigation]}
       className="w-full relative flex"
     >
@@ -25,10 +26,13 @@ const SportsCarousel = () => {
           <div className="flex flex-col justify-center items-center gap-4 text-black">
             <img
               src={sportImage.path}
-              className={`w-64 aspect-auto rounded-lg flex flex-col justify-center items-center`}
+              className={`w-64 aspect-auto rounded-lg flex flex-col justify-center items-center shadow-lg`}
               style={{ backgroundColor: sportImage.bgcolor }}
+              alt={sportImage.text}
             />
-            <h2>{sportImage.text}</h2>
+            <h2 className="text-md lg:text-xl font-semibold">
+              {sportImage.text}
+            </h2>
           </div>
         </SwiperSlide>
       ))}
