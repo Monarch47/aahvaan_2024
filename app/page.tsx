@@ -46,7 +46,9 @@ export default function Home() {
                 // }}
                 className="bg-[#160C28] border-2 border-[#ffffff] md:mt-[23px] hover:text-[#160C28] hover:bg-white hover:border-[#160C28] transition-all text-white px-6 py-3 text-xl font-medium rounded-lg z-[1]"
               >
-                <a href="https://dtu.ac.in">Register</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSce5lmELnCud_2gd4kX60fZqKKWnUaRuxqVl8TNrWKaVWqKXA/viewform?usp=sf_link">
+                  Register
+                </a>
               </button>
             </div>
             <div className="relative top-3/4 hidden lg:block">
@@ -96,10 +98,9 @@ export default function Home() {
           <div className="w-4/5 text-center flex flex-col justify-center items-center gap-10">
             <div className="flex flex-col gap-8 lg:gap-10 pb-6 lg:pb-16 justify-center items-center">
               <h1 className="text-xl lg:text-5xl font-semibold">Events</h1>
-              <p className="lg:text-xl w-3/4 lg:w-1/2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                sequi perspiciatis odio eveniet, minus illum eligendi hic
-                exercitatione magni nemo minima officia. Totam, commodi?
+              <p className="lg:text-xl w-3/4">
+                Participate in 15+ national sporting events and compete for
+                exciting prizes
               </p>
             </div>
           </div>
@@ -118,9 +119,8 @@ export default function Home() {
             <div className="flex flex-col gap-8 lg:gap-10 pb-6 lg:pb-16 justify-center items-center">
               <h1 className="text-xl lg:text-5xl font-semibold">Our Team</h1>
               <p className="lg:text-xl w-3/4 lg:w-1/2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                sequi perspiciatis odio eveniet, minus illum eligendi hic
-                exercitatione magni nemo minima officia. Totam, commodi?
+                Our wonderful team who works tirelessly to make this event a
+                grand success.
               </p>
             </div>
           </div>

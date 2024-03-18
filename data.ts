@@ -125,19 +125,19 @@ export const TeamGridData = [
 
 export const ContactUsData = [
     {
-        number: "1234567890",
-        name: "John Doe",
-        role: "President",
+        number: "+91 8178129896",
+        name: "Raja Kumar",
+        role: "Treasurer",
     },
     {
-        number: "1234567890",
-        name: "John Doe",
-        role: "President",
+        number: "+91 9760344552",
+        name: "Shubh Goel",
+        role: "Secretary",
     },
     {
-        number: "1234567890",
-        name: "John Doe",
-        role: "President",
+        number: "+91 9899210863",
+        name: "Deepanshi Mishra",
+        role: "Secretary",
     },
 ]
 

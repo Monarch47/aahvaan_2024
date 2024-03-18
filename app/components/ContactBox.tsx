@@ -11,8 +11,8 @@ const renderContactData = ContactUsData.map((contact, index) => {
       <h3 className="underline font-medium text-md lg:text-xl">
         {contact.number}
       </h3>
-      <h2 className="font-bold text-lg lg:text-2xl">{contact.name}</h2>
-      <h3 className="text-md lg:text-xl">{contact.role}</h3>
+      <h2 className="font-bold text-md lg:text-2xl">{contact.name}</h2>
+      <h3 className="text-md lg:text-lg">{contact.role}</h3>
     </div>
   );
 });
