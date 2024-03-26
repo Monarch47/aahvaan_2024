@@ -1,3 +1,5 @@
+import SecImage from "./public/assets/council_photos/ShubhGoelSec.jpg"
+
 const sportsWithUnderscores = [
     "arm_wrestling",
     "atheletics",
@@ -92,35 +94,31 @@ export const SportsCarouselImages2 = [
 
 export const TeamGridData = [
     {
-        path: "/next.svg",
-        name: "John Doe",
-        role: "President",
+        path: "assets/council_photos/ShubhGoelSec.jpg",
+        name: "Shubh Goel",
+        role: "Secretary",
     },
     {
-        path: "/next.svg",
-        name: "John Doe",
-        role: "President",
+        path: "assets/council_photos/Deepanshi Mishra- Secretary_.jpg",
+        name: "Deepanshi Mishra",
+        role: "Female Secretary",
     }, {
-        path: "/next.svg",
-        name: "John Doe",
-        role: "President",
+        path: "assets/council_photos/raja.jpg",
+        name: "Raja Kumar",
+        role: "Treasurer",
     }, {
-        path: "/next.svg",
-        name: "John Doe",
-        role: "President",
+        path: "assets/council_photos/abhishek.jpg",
+        name: "Abhishek Yadav",
+        role: "Joint Secretary",
     }, {
-        path: "/next.svg",
-        name: "John Doe",
-        role: "President",
+        path: "assets/council_photos/Anvesha.png",
+        name: "Anvesha",
+        role: "Joint Secretary Female",
     }, {
-        path: "/next.svg",
-        name: "John Doe",
-        role: "President",
-    }, {
-        path: "/next.svg",
-        name: "John Doe",
-        role: "President",
-    },
+        path: "assets/council_photos/Priyanshu.png",
+        name: "Priyanshu Chaudhary",
+        role: "Joint Treasurer",
+    }
 ]
 
 export const ContactUsData = [
@@ -195,5 +193,5 @@ export const SportsIconsData = [
 ]
 
 export const SportsMarqueeData = [
-    "Atheletics", "Chess", "Tennis", "Badminton", "Cricket", "Football", "Weight Lifitng", "Badminton", "Table Tennis",
+    "Atheletics", "Chess", "Tennis", " Badminton", "Cricket", "Football", "Weight Lifitng", "Badminton", "Table Tennis",
 ]
