@@ -27,7 +27,7 @@ export default function Home() {
               <img
                 src="/assets/logos/aahvaan_dark_2.svg"
                 alt=""
-                className="relative z-[2] h-28 sm:h-36 lg:h-48"
+                className="relative z-[2] h-28 sm:h-36 md:mt-24 lg:mt-0 lg:h-48"
               />
               <img
                 src="/assets/logos/aahvaan_ghost.svg"

@@ -107,7 +107,7 @@ export const TeamGridData = [
         name: "Raja Kumar",
         role: "Treasurer",
     }, {
-        path: "assets/council_photos/abhishek.jpg",
+        path: "assets/council_photos/abhishek.png",
         name: "Abhishek Yadav",
         role: "Joint Secretary",
     }, {
@@ -123,18 +123,18 @@ export const TeamGridData = [
 
 export const ContactUsData = [
     {
-        number: "+91 8178129896",
+        number: "8178129896",
         name: "Raja Kumar",
         role: "Treasurer",
     },
     {
-        number: "+91 9760344552",
+        number: "9760344552",
         name: "Shubh Goel",
         role: "Secretary",
     },
     {
-        number: "+91 9899210863",
-        name: "Deepanshi Mishra",
+        number: "9899210863",
+        name: "Deepanshi",
         role: "Secretary",
     },
 ]

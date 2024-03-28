@@ -42,18 +42,18 @@ const Navbar = () => {
     <div
       className={`flex ${
         isScrolled && !isCirclePosition
-          ? "rounded-full w-10 h-10 lg:w-16 lg:h-16 aspect-square bg-white border-2 border-[#160C28] cursor-pointer shadow-lg top-2 left-2"
+          ? "rounded-full w-10 h-10 lg:w-16 lg:h-16 aspect-square bg-white animate-pulse border-2 border-[#160C28] cursor-pointer shadow-lg top-2 left-2"
           : isScrolled
-          ? "rounded-full w-10 h-10 lg:w-16 lg:h-16 bg-white shadow-xl py-2 px-4 top-2 left-2"
-          : "rounded-lg w-full lg:w-1/2 bg-white py-1"
-      } fixed z-10 text-black text-md lg:text-xl items-center justify-evenly transition-all`}
+          ? "rounded-full flex w-10 h-10 lg:w-16 lg:h-16 bg-white shadow-xl py-2 px-4 top-2 left-2"
+          : "flex rounded-lg w-full lg:w-3/4 xl:w-1/2 bg-white py-1 justify-evenly"
+      }  flex fixed z-10 text-black text-lg items-center justify-evenly transition-all`}
       onClick={scrollToTop}
     >
       <div
         className={`${
           isScrolled && !isCirclePosition
             ? "hidden"
-            : "flex justify-center items-center gap-8"
+            : "flex justify-evenly items-center gap-8"
         }`}
       >
         <a href="#">
@@ -65,13 +65,13 @@ const Navbar = () => {
             }`}
           />
         </a>
-        <a href="#events" className="text-md lg:text-xl font-semibold">
+        <a href="#events" className="text-md lg:text-md font-semibold">
           Events
         </a>
-        <a href="#team" className="text-md lg:text-xl font-semibold">
+        <a href="#team" className="text-md lg:textmd font-semibold">
           The Team
         </a>
-        <a href="#contact" className="text-md lg:text-xl font-semibold">
+        <a href="#contact" className="text-md lg:text-md font-semibold">
           Contact Us
         </a>
         <img
