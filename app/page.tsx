@@ -10,13 +10,17 @@ import SportsMarquee from "./components/SportsMarquee";
 import SwiperPrevButton from "./components/SwiperPrevButton";
 import SwiperNextButton from "./components/SwiperNextButton";
 import FootballNav from "./components/FootballNav";
-import NavbarFinal from "./components/NavbarFinal";
+import Head from "next/head";
 
 export default function Home() {
   const router = useRouter();
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between text-black">
+      <Head>
+        <title>aahvaan</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       {/* <Navbar /> */}
       <FootballNav />
       {/* <NavbarFinal /> */}
