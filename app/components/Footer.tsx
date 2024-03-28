@@ -9,7 +9,18 @@ const Footer = (props: Props) => {
       <img src="/assets/logos/layer_1.svg" alt="" className="w-1/12" />
       <FooterLinks />
       <div className="w-4/5 h-[2px] bg-white"></div>
-      <h6>Made with love by Sports Council</h6>
+      <h6>
+        Made with love by:{" "}
+        <span>
+          <a
+            href="https://www.linkedin.com/in/vamsivishwanath/"
+            className="font-bold underline underline-offset-2"
+          >
+            VAMSI
+          </a>
+          👨‍💻
+        </span>
+      </h6>
     </div>
   );
 };
